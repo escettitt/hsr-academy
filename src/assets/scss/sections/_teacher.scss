@@ -1,0 +1,118 @@
+@media(max-width:1020px) {
+    .section_teacher {
+        &__wrapper {
+            position: relative;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            height: fit-content;
+        }
+        &__container {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        &__content {
+            height: fit-content;
+        }
+    }
+    .teacher {
+        &_title {
+            font-size: 5vw;
+        }
+        &_text {
+            font-size: 3.3vw;
+            font-weight: 600;
+            &_medium {
+                font-weight: 500;
+            }
+        }
+        &_body {
+            color: $white-color;
+            position: absolute;
+            left: 20%;
+            top: 2vh;
+            &__wrapper {
+                position: absolute;
+                right: 0;
+                height: 23vh;
+                width: 60vw;
+                background: linear-gradient( 111.85deg, #1d0553 1.09%, #3c065e 50.97%, #430d7d 90%);
+                background-repeat: no-repeat;
+                // clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        &_image {
+            top: 5vh;
+            position: relative;
+            &__wrapper {
+                position: relative;
+                left: 5vw;
+                height: 23vh;
+                top: 2vh;
+                width: 40%;
+                background: url("./assets/img/prepod.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media(min-width:1021px) {
+    .section_teacher {
+        &__wrapper {
+            position: relative;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            height: fit-content;
+        }
+        &__container {
+            margin-left: $margin-container;
+            margin-right: $margin-container;
+        }
+        &__content {
+            height: fit-content;
+        }
+    }
+    .teacher {
+        &_title {
+            font-size: $h1;
+        }
+        &_text {
+            font-size: $h6;
+            font-weight: 600;
+            &_medium {
+                font-weight: 500;
+            }
+        }
+        &_body {
+            color: $white-color;
+            position: absolute;
+            width: 50%;
+            left: 20%;
+            top: 15vh;
+            &__wrapper {
+                position: absolute;
+                right: 0;
+                height: 60vh;
+                width: 60vw;
+                background: linear-gradient( 111.85deg, #1d0553 1.09%, #3c065e 50.97%, #430d7d 90%);
+                background-repeat: no-repeat;
+                // clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        &_image {
+            top: 5vh;
+            position: relative;
+            &__wrapper {
+                position: relative;
+                left: $margin-container;
+                height: 50vh;
+                top: 5vh;
+                width: 40%;
+                background: url("./assets/img/prepod.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+@media(max-width: 1020px) {
+    .button {
+        display: block;
+        transition: 0.3s;
+        color: $white-color;
+        font-weight: 600;
+        font-size: 3.3vw;
+        padding: 2vh 11vw;
+        text-decoration: none;
+        width: fit-content;
+        &:hover {
+            cursor: pointer;
+        }
+        &_primary {
+            width: auto;
+            background-color: $violet-color;
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.4);
+            }
+        }
+        &_registration {
+            width: auto;
+            border-radius: 5vw;
+            color: white;
+            text-align: center;
+            padding: 2vh 0vw;
+            background: $violet-color;
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.4);
+            }
+        }
+        &_outline {
+            &-white {
+                display: inline-block;
+                transform: perspective(1px) translateZ(0);
+                position: relative;
+                border: 2px solid $white-color;
+                overflow: hidden;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: #ffffff;
+                    border-radius: 100%;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    -webkit-transition-property: transform;
+                    transition-property: transform;
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-timing-function: ease-out;
+                    transition-timing-function: ease-out;
+                }
+                &:hover {
+                    color: $violet-color;
+                    &::before {
+                        -webkit-transform: scale(2);
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+        &-more {
+            width: 200px;
+            font-size: 3.5vw;
+            font-weight: 400;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: '';
+                height: 4vw;
+                width: 4vw;
+                position: absolute;
+                right: -5vw;
+                background: url('./assets/img/button_next.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+        &-students {
+            width: 200px;
+            font-size: $h6;
+            font-weight: 400;
+            padding-left: 10%;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: '';
+                height: 1.2vw;
+                width: 1.2vw;
+                position: absolute;
+                right: -1.5vw;
+                background: url('./assets/img/button_next.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+@media(min-width: 1021px) {
+    .button {
+        display: block;
+        transition: 0.3s;
+        color: $white-color;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.8vw 2vw;
+        width: fit-content;
+        &:hover {
+            cursor: pointer;
+        }
+        &_primary {
+            background-color: $violet-color;
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.4);
+            }
+        }
+        &_registration {
+            width: auto;
+            border-radius: 5vw;
+            color: white;
+            text-align: center;
+            padding: 0.8vw 0vw;
+            background: $violet-color;
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.4);
+            }
+        }
+        &_outline {
+            &-white {
+                display: inline-block;
+                transform: perspective(1px) translateZ(0);
+                position: relative;
+                border: 2px solid $white-color;
+                overflow: hidden;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: #ffffff;
+                    border-radius: 100%;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    -webkit-transition-property: transform;
+                    transition-property: transform;
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-timing-function: ease-out;
+                    transition-timing-function: ease-out;
+                }
+                &:hover {
+                    color: $violet-color;
+                    &::before {
+                        -webkit-transform: scale(2);
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+        &-more {
+            top: 2vh;
+            width: 200px;
+            font-size: $h6;
+            font-weight: 400;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: '';
+                height: 1.2vw;
+                width: 1.2vw;
+                position: absolute;
+                right: -1.5vw;
+                background: url('./assets/img/button_next.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+        &-students {
+            width: 200px;
+            font-size: $h6;
+            font-weight: 400;
+            padding-left: 10%;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: '';
+                height: 1.2vw;
+                width: 1.2vw;
+                position: absolute;
+                right: -1.5vw;
+                background: url('./assets/img/button_next.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}

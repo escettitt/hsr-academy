@@ -1,0 +1,11 @@
+.robo {
+    &__bg {
+        position: absolute;
+        left: -20vw;
+        right: -20vw;
+        top: 0;
+        z-index: 0;
+        background: linear-gradient(111.85deg, #1D0553 1.09%, #3C065E 50.97%, #430D7D 90%);
+        height: 100vh;
+    }
+}

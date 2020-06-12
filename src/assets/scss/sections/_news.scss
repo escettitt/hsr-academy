@@ -1,0 +1,92 @@
+    @media (max-width: 1020px) {
+        .section_news {
+            &__wrapper {
+                position: relative;
+                padding-top: 10vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+            &__wrap {
+                padding-top: 2vh;
+                margin-left: -4vw;
+                margin-right: -4vw;
+                overflow-x: scroll;
+            }
+            &__overflow {
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+            }
+            &__element {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                padding-right: 4vw;
+                padding-left: 4vw;
+                width: 80vw;
+                align-items: center;
+                color: $black-color;
+                margin-top: 5vh;
+            }
+            &__image {
+                width: 100%;
+                padding-right: 3vw;
+                & img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &__body {
+                width: 100%;
+            }
+            &__category {
+                color: $violet-color;
+                padding-bottom: 2vh;
+                font-size: 3.3vw;
+            }
+            &__title {
+                font-size: 3.9vw;
+                line-height: 5.5vw;
+                font-weight: bold;
+                margin-bottom: 2vh;
+            }
+            &__text {
+                font-size: 3.5vw;
+                padding-bottom: 3vh;
+            }
+        }
+    }
+    
+    @media (min-width: 1021px) {
+        .section_news {
+            &__wrap {
+                position: relative;
+                height: 60vh;
+            }
+            &__wrapper {
+                position: relative;
+                padding-top: 10vh;
+                padding-bottom: 10vh;
+                height: fit-content;
+            }
+            &__slider {
+                height: fit-content;
+            }
+        }
+        .news_text {
+            color: $white-color;
+            position: absolute;
+            width: 50%;
+            left: 30%;
+            top: 10vh;
+            &__wrapper {
+                position: absolute;
+                right: 0;
+                height: 50vh;
+                width: 50vw;
+                background: linear-gradient(111.85deg, #1D0553 1.09%, #3C065E 50.97%, #430D7D 90%);
+                background-repeat: no-repeat;
+                // clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    }

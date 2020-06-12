@@ -1,0 +1,133 @@
+@media (max-width:1020px) {
+    .main {
+        &__block {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        &__parallax {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -204px;
+            right: -66px;
+            z-index: 10;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        &__wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            z-index: 30;
+        }
+        &__circles {
+            width: 95%;
+            height: auto;
+        }
+        &__image {
+            position: absolute;
+            bottom: 10vh;
+            width: 100%;
+            height: auto;
+        }
+        &__body {
+            position: relative;
+            top: 10vh;
+            height: 100%;
+            z-index: 30;
+        }
+        &__centered {
+            justify-content: center !important;
+        }
+        &__text-center {
+            text-align: center !important;
+        }
+        &__hire_bg {
+            background: url('./assets/img/hirebg.png');
+            background-size: cover;
+        }
+    }
+    .section__wrapper {
+        position: relative;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
+@media (min-width: 1021px) {
+    .main {
+        &__block {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        &__parallax {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -204px;
+            right: -66px;
+            z-index: 10;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        &__wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin-right: $margin-container;
+            margin-left: $margin-container;
+            z-index: 30;
+        }
+        &__circles {
+            width: 95%;
+            height: auto;
+        }
+        &__image {
+            position: absolute;
+            width: 60%;
+            height: auto;
+            right: 0;
+            top: 56%;
+            z-index: 20;
+            transform: translateY(-50%);
+            &.registration {
+                right: -7vw;
+            }
+        }
+        &__body {
+            width: 60%;
+            z-index: 30;
+        }
+        &__centered {
+            justify-content: center !important;
+        }
+        &__text-center {
+            text-align: center !important;
+        }
+        &__hire_bg {
+            background: url('./assets/img/hirebg.png');
+            background-size: cover;
+        }
+    }
+    .section__wrapper {
+        position: relative;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        margin-right: $margin-container;
+        margin-left: $margin-container;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,42 @@
+//base
+//Шрифты
+@import './base/fonts';
+//Переменные
+@import './base/variables';
+//Классы отвечающие за цвет, размер, положение ...
+@import './base/classes';
+@import './base/text';
+//Обнуление дефолтных стилей
+@import './base/reset';
+//-------------------
+//layout
+@import './layout/header';
+@import './layout/footer';
+//------------------------
+//components
+@import './components/buttons';
+@import './components/partners';
+@import './components/_card/course';
+@import './components/_card/course_small';
+@import './components/_card/news';
+@import './components/gridCourses';
+@import './components/gridElem';
+@import './components/slider';
+@import './components/slick-slider';
+@import './components/header_popup';
+@import './components/registration';
+@import './components/spoiler';
+//------------------------
+//sections
+@import './sections/news-big';
+@import './sections/teachers';
+@import './sections/aboutus';
+@import './sections/hire';
+@import './sections/teacher';
+@import './sections/starts';
+@import './sections/main';
+@import './sections/info';
+@import './sections/news';
+@import './sections/students';
+@import './base/backgrounds';
+@import './sections/course';

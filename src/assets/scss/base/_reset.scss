@@ -1,0 +1,137 @@
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.95vw;
+    background: #FAFAFA;
+    color: $black-color;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#app {
+    position: relative;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 1021px) {
+    .page {
+        height: 100%;
+        padding-bottom: 70vh;
+        &__text-title {
+            font-size: $title;
+            position: relative;
+            z-index: 2;
+            font-weight: 900;
+        }
+        &__text-subtitle {
+            position: relative;
+            padding-top: 2vh;
+            font-size: $h3;
+            font-weight: 400;
+        }
+        &__text-description {
+            position: relative;
+            padding-top: 2vh;
+            font-size: $h6;
+            font-weight: 400;
+        }
+        &__button {
+            &-more {
+                margin-top: 2vh;
+                width: 200px;
+                font-size: $h6;
+                text-decoration: none;
+                position: relative;
+                &:before {
+                    content: '';
+                    height: 1.2vw;
+                    width: 1.2vw;
+                    position: absolute;
+                    right: -1.5vw;
+                    background: url('./assets/img/button_next.svg') no-repeat;
+                    background-size: contain;
+                }
+            }
+            &-students {
+                width: 200px;
+                font-size: $h6;
+                font-weight: 400;
+                padding-left: 10%;
+                text-decoration: none;
+                position: relative;
+                &:before {
+                    content: '';
+                    height: 1.2vw;
+                    width: 1.2vw;
+                    position: absolute;
+                    right: -1.5vw;
+                    background: url('./assets/img/button_next.svg') no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .page {
+        height: 100%;
+        overflow: hidden;
+        &__text-title {
+            font-size: 9vw;
+            position: relative;
+            z-index: 2;
+            font-weight: 900;
+        }
+        &__text-subtitle {
+            position: relative;
+            padding-top: 2vh;
+            font-size: 3.5vw;
+            font-weight: 400;
+        }
+        &__text-description {
+            position: relative;
+            padding-top: 2vh;
+            font-size: 3.3vw;
+            font-weight: 400;
+        }
+        &__button {
+            &-more {
+                width: 200px;
+                font-size: 3.3vw;
+                text-decoration: none;
+                &:before {
+                    content: '';
+                    height: 1.2vw;
+                    width: 1.2vw;
+                    position: absolute;
+                    right: -1.5vw;
+                    background: url('./assets/img/button_next.svg') no-repeat;
+                    background-size: contain;
+                }
+            }
+            &-students {
+                width: 200px;
+                font-size: $h6;
+                font-weight: 400;
+                padding-left: 10%;
+                text-decoration: none;
+                position: relative;
+                &:before {
+                    content: '';
+                    height: 1.2vw;
+                    width: 1.2vw;
+                    position: absolute;
+                    right: -1.5vw;
+                    background: url('./assets/img/button_next.svg') no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

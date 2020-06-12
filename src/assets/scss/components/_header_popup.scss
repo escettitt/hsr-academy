@@ -1,0 +1,150 @@
+@media(max-width:1020px) {
+    .header_popup {
+        position: relative;
+        &__wrapper {
+            position: relative;
+            display: none;
+            flex-flow: column wrap;
+            text-align: left !important;
+            bottom: 0;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            z-index: 10000;
+            background: #FFFFFF;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            padding: 2vh 2vw 4vh 2vw;
+            font-size: 5vw;
+            color: $gray-color;
+        }
+        &__element {
+            margin-top: 2vh;
+            width: 70vw;
+            margin-right: 10vw;
+            height: fit-content;
+        }
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5vh;
+            border-bottom: 1px solid #DCDCDC;
+            width: 100%;
+            position: relative;
+        }
+        &__arrow-next {
+            &:before {
+                content: '';
+                bottom: 0;
+                position: absolute;
+                background: url('./assets/img/arrow_next.svg') no-repeat;
+                background-size: contain;
+                height: .9vw;
+                width: .9vw;
+                margin-left: .5vw;
+            }
+        }
+        &_icon {
+            transition: .3s;
+            position: relative;
+            height: 1vw;
+            width: 1vw;
+            margin-right: 6vw;
+            & img {
+                object-fit: contain;
+            }
+        }
+        &__type {
+            font-weight: 600;
+            position: relative;
+            &_element {
+                transition: .3s;
+                margin-bottom: 1vh;
+                &:hover {
+                    cursor: pointer;
+                    color: $violet-color;
+                }
+                &:last-child {
+                    margin-bottom: .5vh;
+                }
+            }
+            &_active {
+                filter: invert(16%) sepia(70%) saturate(6815%) hue-rotate(276deg) brightness(85%) contrast(106%);
+            }
+        }
+    }
+}
+
+@media(min-width:1021px) {
+    .header_popup {
+        position: relative;
+        &__wrapper {
+            position: absolute;
+            display: none;
+            flex-flow: column wrap;
+            top: 5vh;
+            left: 6vw;
+            width: 35vw;
+            height: 30vh;
+            overflow: hidden;
+            z-index: 10000;
+            background: #FFFFFF;
+            border: 1px solid rgba(166, 21, 252, 0.2);
+            box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.25);
+            padding: 2vh 2vw 4vh 2vw;
+            color: $gray-color;
+        }
+        &__element {
+            margin-top: 2vh;
+            width: 45%;
+            height: fit-content;
+        }
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5vh;
+            border-bottom: 1px solid #DCDCDC;
+            width: 100%;
+            position: relative;
+        }
+        &__arrow-next {
+            &:before {
+                content: '';
+                bottom: 0;
+                position: absolute;
+                background: url('./assets/img/arrow_next.svg') no-repeat;
+                background-size: contain;
+                height: .9vw;
+                width: .9vw;
+                margin-left: .5vw;
+            }
+        }
+        &_icon {
+            transition: .3s;
+            position: relative;
+            & img {
+                height: 1vw;
+                width: 1vw;
+                object-fit: contain;
+            }
+        }
+        &__type {
+            font-weight: 600;
+            line-height: 2vh;
+            position: relative;
+            &_element {
+                transition: .3s;
+                margin-bottom: 2vh;
+                &:hover {
+                    cursor: pointer;
+                    color: $violet-color;
+                }
+                &:last-child {
+                    margin-bottom: 2vh;
+                }
+            }
+            &_active {
+                filter: invert(16%) sepia(70%) saturate(6815%) hue-rotate(276deg) brightness(85%) contrast(106%);
+            }
+        }
+    }
+}

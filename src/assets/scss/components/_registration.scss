@@ -1,0 +1,282 @@
+@media(max-width: 1020px) {
+    .registration {
+        &__wrapper {
+            position: absolute;
+            height: fit-content;
+            left: -5vw;
+            right: -5vw;
+            background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 417.13%);
+            border-radius: 30px 30px 0px 0px;
+            box-sizing: border-box;
+            padding: 3vh 5vw 3vh 5vw;
+        }
+        & .dropdown {
+            background: url('./assets/img/arrow_next.svg') no-repeat;
+            height: 1vw;
+            width: 1vw;
+        }
+        &__header {
+            width: 100%;
+            padding-bottom: 3vh;
+            font-size: 5vw;
+            font-weight: 600;
+            color: $black-color;
+            text-align: center;
+        }
+        &__body {
+            width: 100%;
+            height: fit-content;
+        }
+        &_field {
+            padding: 1vh 0 1vh 0;
+            width: 100%;
+            &__label {
+                font-size: 3.3vw;
+                padding-bottom: 1vh;
+                text-align: left;
+                color: $black-color;
+                font-weight: 400;
+                &:after {
+                    content: "\A";
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: $violet-color;
+                    display: inline-block;
+                    margin: 0 2vw;
+                }
+            }
+            &__input {
+                padding: 1.5vh 3vw 1.5vh 3vw;
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 3.3vw;
+                border: none;
+                border-radius: 4vw;
+                background: #F5F5F5;
+                &::placeholder {
+                    color: #B1B1B1;
+                }
+                &__dropdown {
+                    padding: 1.5vh 3vw 1.5vh 3vw;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: left;
+                    font-size: 3.3vw;
+                    border: none;
+                    border-radius: 4vw;
+                    background: #F5F5F5 url('./assets/img/dropdown.svg') no-repeat 95% center;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &_content {
+                        display: none;
+                        height: 18vh;
+                        left: 5vw;
+                        right: 5vw;
+                        margin-top: 1vh;
+                        box-sizing: border-box;
+                        overflow-y: scroll;
+                        z-index: 10021;
+                        position: absolute;
+                        background: #FFFFFF;
+                        border: 1px solid rgba(166, 21, 252, 0.2);
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        &.show {
+                            display: block !important;
+                        }
+                    }
+                    &_item {
+                        padding: 1vh 1.5vw;
+                        text-align: left;
+                        font-size: 3.3vw;
+                        &:first-child {
+                            padding-top: 2vh;
+                        }
+                        &:last-child {
+                            padding-bottom: 2vh;
+                        }
+                        &:hover {
+                            color: #A615FC;
+                            ;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        &__agreement {
+            margin-top: 1vh;
+            margin-bottom: 3vh;
+            font-size: 3.3vw;
+            line-height: 4vw;
+            & a {
+                color: $violet-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media(min-width: 1021px) {
+    .registration {
+        &__wrapper {
+            position: absolute;
+            right: 0;
+            top: 27vh;
+            height: fit-content;
+            width: 18vw;
+            background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 417.13%);
+            box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.25);
+            padding: 4vh 1.5vw 3vh 1.5vw;
+        }
+        &__header {
+            width: 100%;
+            padding-bottom: 1vh;
+            font-size: $h3;
+            font-weight: 600;
+            color: $black-color;
+            text-align: center;
+        }
+        &__body {
+            width: 100%;
+            height: fit-content;
+        }
+        &_field {
+            padding: 1vh 0 1vh 0;
+            width: 100%;
+            & input {
+                &:focus {
+                    outline: none;
+                }
+            }
+            &_error {
+                color: #E90000;
+                font-size: 0.7vw;
+                padding-left: 1vw;
+            }
+            &__label {
+                padding-left: 1vw;
+                font-size: $h6;
+                color: $black-color;
+                padding-bottom: 1vh;
+                font-weight: 400;
+                &:after {
+                    content: "\A";
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: $violet-color;
+                    display: inline-block;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    margin: 0 .5vw;
+                }
+                &__error {
+                    &:after {
+                        content: "\A";
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: #E90000 !important;
+                        display: inline-block;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        margin: 0 .5vw;
+                    }
+                }
+            }
+            &__input {
+                padding: 1vh 1vw 1vh 1vw;
+                position: relative;
+                width: 100%;
+                box-sizing: border-box;
+                font-size: $h7;
+                border: none;
+                border-radius: 3vw;
+                background: #F5F5F5;
+                &::placeholder {
+                    color: #B1B1B1;
+                }
+                &__error {
+                    border: 1px solid #E90000;
+                    background: #F5F5F5 url('./assets/img/input_error.svg') no-repeat 95% center;
+                }
+                &__dropdown {
+                    padding: 1vh 3vw 1vh 1vw;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: left;
+                    font-size: $h7;
+                    border: none;
+                    border-radius: 3vw;
+                    background: #F5F5F5 url('./assets/img/dropdown.svg') no-repeat 95% center;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &_content {
+                        display: none;
+                        height: 18vh;
+                        left: 1.5vw;
+                        right: 1.5vw;
+                        margin-top: 1vh;
+                        box-sizing: border-box;
+                        overflow-y: scroll;
+                        z-index: 10021;
+                        position: absolute;
+                        background: #FFFFFF;
+                        border: 1px solid rgba(166, 21, 252, 0.2);
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        &::-webkit-scrollbar {
+                            color: transparent;
+                            width: 16px
+                        }
+                        /* background of the scrollbar except button or resizer */
+                        &::-webkit-scrollbar-track {
+                            background-color: transparent
+                        }
+                        /* scrollbar itself */
+                        &::-webkit-scrollbar-thumb {
+                            background-color: #babac0;
+                            border-radius: 16px;
+                            border: 4px solid #fff
+                        }
+                        /* set button(top and bottom of the scrollbar) */
+                        &::-webkit-scrollbar-button {
+                            display: none
+                        }
+                        &.show {
+                            display: block !important;
+                        }
+                    }
+                    &_item {
+                        padding: 1vh 1.5vw;
+                        &:first-child {
+                            padding-top: 2vh;
+                        }
+                        &:last-child {
+                            padding-bottom: 2vh;
+                        }
+                        &:hover {
+                            color: #A615FC;
+                            ;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        &__agreement {
+            margin-top: 1vh;
+            margin-bottom: 3vh;
+            font-size: .55vw;
+            line-height: .8vw;
+            & a {
+                color: $violet-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+@media(max-width:1020px) {
+    .slick-slider {
+        overflow: hidden;
+        position: relative
+    }
+    .slick-track {
+        display: flex;
+        height: 100%;
+    }
+    .slick-slide {
+        overflow: hidden;
+    }
+    .section_students__wrapper {
+        & .slick-dots {
+            padding: 0;
+            margin: 0;
+            display: flex !important;
+            flex-direction: row;
+            justify-content: center;
+            & li {
+                font-size: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                & button {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    font-size: 0;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    outline: none;
+                    &::before {
+                        height: 2px;
+                        width: 50px;
+                        border-radius: 0px;
+                        content: "";
+                        display: block;
+                        background: #CDCDCD;
+                    }
+                }
+                &.slick-active button::before {
+                    height: 4px;
+                    background: linear-gradient(90deg, #02F856 -19%, #02F1F8 26.87%, #A615FC 100%);
+                    -webkit-animation: animGradient 10s ease infinite;
+                    -moz-animation: animGradient 10s ease infinite;
+                    animation: animGradient 10s ease infinite;
+                    @-webkit-keyframes animGradient {
+                        0% {
+                            filter: hue-rotate(0deg)
+                        }
+                        100% {
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                    @-moz-keyframes animGradient {
+                        0% {
+                            filter: hue-rotate(0deg)
+                        }
+                        100% {
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                    @keyframes animGradient {
+                        0% {
+                            filter: hue-rotate(0deg)
+                        }
+                        100% {
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1021px) {
+    .slick-slider {
+        overflow: hidden;
+        position: relative
+    }
+    .slick-track {
+        display: flex;
+        height: 100%;
+    }
+    .slick-slide {
+        overflow: hidden;
+    }
+    .section_students__wrapper {
+        & .slick-dots {
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: -10px;
+            display: flex;
+            position: absolute;
+            flex-direction: colunm;
+            align-items: center;
+            & li {
+                font-size: 0px;
+                display: flex;
+                justify-content: center;
+                & button {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    font-size: 0;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    outline: none;
+                    &::before {
+                        height: 50px;
+                        width: 2px;
+                        border-radius: 0px;
+                        content: "";
+                        display: block;
+                        background: #CDCDCD;
+                    }
+                }
+                &.slick-active button::before {
+                    width: 4px;
+                    background: linear-gradient(180deg, #02F856 -19%, #02F1F8 26.87%, #A615FC 100%);
+                    -webkit-animation: animGradient 10s ease infinite;
+                    -moz-animation: animGradient 10s ease infinite;
+                    animation: animGradient 10s ease infinite;
+                    @-webkit-keyframes animGradient {
+                        0% {
+                            filter: hue-rotate(0deg)
+                        }
+                        100% {
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                    @-moz-keyframes animGradient {
+                        0% {
+                            filter: hue-rotate(0deg)
+                        }
+                        100% {
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                    @keyframes animGradient {
+                        0% {
+                            filter: hue-rotate(0deg)
+                        }
+                        100% {
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

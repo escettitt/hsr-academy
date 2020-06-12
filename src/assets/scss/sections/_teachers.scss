@@ -1,0 +1,149 @@
+@media(max-width: 1020px) {
+    .teachers {
+        &__body {
+            margin-top: 5vh;
+        }
+        &__wrapper {
+            margin-right: 5vw;
+            margin-left: 5vw;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+        &__element {
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            position: relative;
+            left: 0;
+            color: $black-color;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            &:nth-child(even) {
+                justify-content: flex-end;
+                & .teachers__element_img {
+                    order: 1;
+                }
+                & .teachers__element_body {
+                    order: 0;
+                    margin-right: 1vw;
+                }
+            }
+            &:nth-child(odd) {
+                justify-content: flex-start;
+                & .teachers__element_img {
+                    order: 0;
+                }
+                & .teachers__element_body {
+                    order: 1;
+                    margin-left: 1vw;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0vh;
+            }
+            &_img {
+                width: 50%;
+                & img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &_body {}
+            &_name {
+                width: max-content;
+                font-weight: 700;
+                margin-bottom: 2vh;
+                font-size: 5vw;
+            }
+            &_text {
+                width: max-content;
+                font-weight: 400;
+                margin-bottom: 1vh;
+                font-size: 3.3vw;
+                &:nth-child(3n) {
+                    margin-bottom: 3vh;
+                }
+                &-bold {
+                    font-weight: 600;
+                }
+                & a {
+                    color: $black-color;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1021px) {
+    .teachers {
+        &__body {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        &__wrapper {
+            margin-right: $margin-container;
+            margin-left: $margin-container;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+        &__element {
+            position: relative;
+            left: 0;
+            color: $black-color;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            &:nth-child(even) {
+                justify-content: flex-end;
+                & .teachers__element_img {
+                    order: 1;
+                }
+                & .teachers__element_body {
+                    order: 0;
+                    margin-right: 1vw;
+                }
+            }
+            &:nth-child(odd) {
+                justify-content: flex-start;
+                & .teachers__element_img {
+                    order: 0;
+                }
+                & .teachers__element_body {
+                    order: 1;
+                    margin-left: 1vw;
+                }
+            }
+            &_img {
+                width: 35%;
+                & img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &_body {}
+            &_name {
+                width: max-content;
+                font-weight: 700;
+                margin-bottom: 2vh;
+                font-size: $h1;
+            }
+            &_text {
+                width: max-content;
+                font-weight: 400;
+                margin-bottom: 1vh;
+                font-size: $h6;
+                &:nth-child(3n) {
+                    margin-bottom: 3vh;
+                }
+                &-bold {
+                    font-weight: 600;
+                }
+                & a {
+                    color: $black-color;
+                }
+            }
+        }
+    }
+}

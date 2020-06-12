@@ -1,0 +1,224 @@
+@media (max-width: 1020px) {
+    .info {
+        &__wrapper {
+            position: relative;
+            padding-right: 5vw;
+            padding-left: 5vw;
+            height: fit-content;
+            overflow: hidden;
+            background: linear-gradient(111.85deg, #1D0553 1.09%, #3C065E 50.97%, #430D7D 90%);
+        }
+        &__container {
+            display: flex;
+            height: 100%;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            justify-content: center;
+            flex-direction: column;
+            color: $white-color;
+        }
+        &__parallax {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: -103px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__circles {
+            width: 68%;
+            height: auto;
+        }
+        &__header {
+            font-size: 10vw;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 2vh;
+        }
+        &__content {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 5vh;
+            &:last-child {
+                margin-bottom: 0vh;
+            }
+            &_header {
+                font-size: 8vw;
+                font-weight: 700;
+                background: -webkit-linear-gradient(#02F1F8, #A615FC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &_title {
+                position: relative;
+                color: $white-color;
+                font-size: 3.5vw;
+                font-weight: 600;
+            }
+            &_text {
+                font-size: 3.3vw;
+                opacity: 0.7;
+                font-weight: 400;
+                margin-left: 3vw;
+            }
+        }
+    }
+    .ln-url {
+        position: relative;
+        font-weight: 400;
+        font-size: 3.3vw;
+        text-decoration: underline;
+        margin-left: 5vw;
+    }
+    .ln-icon {
+        content: '';
+        margin-left: -5vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: url('./assets/img/ln.svg') no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+        height: 4vw;
+        width: 4vw;
+        opacity: 0.8;
+    }
+    .ln-icon-violet {
+        content: '';
+        margin-left: -5vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: url('./assets/img/ln-violet.svg') no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+        height: 4vw;
+        width: 4vw;
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 1021px) {
+    .info {
+        &__wrapper {
+            position: relative;
+            padding-right: $margin-container_b;
+            padding-left: $margin-container_b;
+            height: fit-content;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            overflow: hidden;
+            background: linear-gradient(111.85deg, #1D0553 1.09%, #3C065E 50.97%, #430D7D 90%);
+        }
+        &__container {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            flex-direction: column;
+            color: $white-color;
+        }
+        &__parallax {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: -103px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__circles {
+            width: 68%;
+            height: auto;
+        }
+        &__header {
+            font-size: $title;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 2vh;
+        }
+        &__content {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding-top: 5vh;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-bottom: 5vh;
+            &_header {
+                font-size: $title;
+                font-weight: 700;
+                background: -webkit-linear-gradient(#02F1F8, #A615FC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &_title {
+                position: relative;
+                color: $white-color;
+                margin-left: 3vw;
+                font-size: 1.2vw;
+                font-weight: 600;
+                &:after {
+                    content: '';
+                    height: 2px;
+                    width: 2.5vw;
+                    position: absolute;
+                    top: 50%;
+                    left: -19%;
+                    background-color: #ffffff;
+                }
+            }
+            &_text {
+                font-size: $h7;
+                opacity: 0.7;
+                font-weight: 400;
+                margin-left: 3vw;
+            }
+        }
+    }
+    .ln-url {
+        position: relative;
+        font-weight: 400;
+        text-decoration: underline;
+        margin-left: 2vw;
+    }
+    .ln-icon {
+        content: '';
+        margin-left: -2vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: url('./assets/img/ln.svg') no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+        height: 1.5vw;
+        width: 1.5vw;
+        opacity: 0.8;
+    }
+    .ln-icon-violet {
+        content: '';
+        margin-left: -2vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: url('./assets/img/ln-violet.svg') no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+        height: 1.5vw;
+        width: 1.5vw;
+        opacity: 0.8;
+    }
+}

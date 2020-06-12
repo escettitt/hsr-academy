@@ -1,0 +1,91 @@
+@media(max-width: 1020px) {
+    .card_news {
+        &__wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 4vh 7vw;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 30px rgba(63, 0, 100, 0.25);
+            color: $black-color;
+            margin-top: 5vh;
+        }
+        &__image {
+            width: 40vw;
+            padding-right: 3vw;
+            & img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &__body {
+            width: 100%;
+        }
+        &__category {
+            color: $violet-color;
+            padding-bottom: 2vh;
+            font-size: 3.3vw;
+        }
+        &__title {
+            font-size: 3.9vw;
+            line-height: 5.5vw;
+            font-weight: bold;
+            margin-bottom: 2vh;
+        }
+        &__text {
+            font-size: 3.5vw;
+            padding-bottom: 3vh;
+        }
+    }
+}
+
+@media(min-width: 1021px) {
+    .card_news {
+        &__wrapper {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $black-color;
+            &:nth-child(even) {
+                & .card_news__image {
+                    order: 1;
+                }
+                & .card_news__body {
+                    order: 0;
+                }
+            }
+            &:nth-child(odd) {
+                & .card_news__image {
+                    order: 0;
+                }
+                & .card_news__body {
+                    order: 1;
+                }
+            }
+        }
+        &__image {
+            width: 20vw;
+            & img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &__body {
+            width: 30vw;
+        }
+        &__category {
+            color: $violet-color;
+            font-size: $h7;
+        }
+        &__title {
+            font-size: $h2;
+            margin-bottom: 1vh;
+        }
+        &__text {
+            font-size: $h6;
+        }
+    }
+}

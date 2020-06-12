@@ -1,0 +1,185 @@
+@media(max-width:1020px) {
+    .spoiler {
+        position: relative;
+        font-weight: 500;
+        font-size: 3.3vw;
+        color: #343434;
+        border-top: 1px solid #dcdcdc;
+        &.active {
+            &::before {
+                content: '';
+                width: 4px;
+                content: '';
+                background: linear-gradient(180deg, #02F856 -19%, #02F1F8 26.87%, #A615FC 100%);
+                position: absolute;
+                top: 0;
+                height: 100%;
+                left: 0;
+            }
+        }
+        & ul {
+            padding-left: 1vw;
+        }
+        & li {
+            border: none;
+            padding-top: .2vh;
+            padding-bottom: .2vh;
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+        &__head {
+            cursor: pointer;
+            padding-right: 50px;
+            padding-bottom: 3vh;
+            padding-top: 3vh;
+            position: relative;
+            & i {
+                width: 5vw;
+                height: 5vw;
+                right: 0px;
+                top: 50%;
+                position: absolute;
+                display: block;
+                transform: translateY(-50%);
+                background: #A615FC;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::after {
+                    content: '';
+                    background-color: #fff;
+                    width: 2px;
+                    height: 10px;
+                    position: absolute;
+                }
+                &::before {
+                    content: '';
+                    background-color: #fff;
+                    width: 2px;
+                    height: 10px;
+                    position: absolute;
+                    transform: rotate(90deg);
+                    transition: all .3s;
+                    .active & {
+                        transform: rotate(0deg);
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+        &__body {
+            padding-bottom: 2vh;
+        }
+    }
+    .card_course__wrapper {
+        & .spoiler {
+            margin-left: -3vw;
+            width: calc(100% + 6vw);
+            &__head,
+            &__body {
+                padding-left: 3vw;
+                padding-right: 3vw;
+            }
+            &__head {
+                padding-right: 4vw;
+                & i {
+                    right: 3vw;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1021px) {
+    .spoiler {
+        position: relative;
+        font-weight: 500;
+        font-size: 0.9vw;
+        color: #343434;
+        border-top: 1px solid #dcdcdc;
+        &.active {
+            &::before {
+                content: '';
+                width: 4px;
+                content: '';
+                background: linear-gradient(180deg, #02F856 -19%, #02F1F8 26.87%, #A615FC 100%);
+                position: absolute;
+                top: 0;
+                height: 100%;
+                left: 0;
+            }
+        }
+        & ul {
+            padding-left: 1vw;
+        }
+        & li {
+            border: none;
+            padding-top: 0.2vh;
+            padding-bottom: .2vh;
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+        &__head {
+            cursor: pointer;
+            padding-right: 50px;
+            padding-bottom: 2vh;
+            padding-top: 2vh;
+            position: relative;
+            & i {
+                width: 30px;
+                height: 30px;
+                right: 0px;
+                top: 50%;
+                position: absolute;
+                display: block;
+                transform: translateY(-50%);
+                background: #A615FC;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::after,
+                &::before {
+                    content: '';
+                    background-color: #fff;
+                    width: 18px;
+                    height: 4px;
+                    position: absolute;
+                }
+                &::before {
+                    transform: rotate(90deg);
+                    transition: all .3s;
+                    .active & {
+                        transform: rotate(0deg);
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+        &__body {
+            padding-bottom: 2vh;
+        }
+    }
+    .card_course__wrapper {
+        & .spoiler {
+            margin-left: -3vw;
+            width: calc(100% + 6vw);
+            &__head,
+            &__body {
+                padding-left: 3vw;
+                padding-right: 3vw;
+            }
+            &__head {
+                padding-right: 4vw;
+                & i {
+                    right: 3vw;
+                }
+            }
+        }
+    }
+}

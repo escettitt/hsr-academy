@@ -1,0 +1,212 @@
+@media(max-width: 1020px) {
+    .card_course {
+        &__border {
+            border-bottom: 1px solid #DCDCDC;
+        }
+        &__wrapper {
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5vh;
+            padding: 3vh 3vw 0 3vw;
+            box-shadow: 0px 5px 10px rgba(166, 21, 252, 0.25);
+        }
+        &__title {
+            font-size: 6vw;
+            padding-bottom: 1vh;
+            color: $black-color;
+        }
+        &__subtitle {
+            width: 100%;
+            font-size: 4vw;
+            color: $black-color;
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 1vh;
+            margin-bottom: 2vh;
+        }
+        &__text {
+            font-size: 3.3vw;
+            color: $black-color;
+            font-weight: 400;
+        }
+        &__column {
+            display: flex;
+            width: 100%;
+            margin-bottom: 4vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__row {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        &__header {
+            margin-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+        }
+        &__price {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            border-bottom: 1px solid #DCDCDC;
+        }
+        &__program {
+            width: 100%;
+            &__header {
+                font-size: $h4;
+                padding-bottom: 3vh;
+            }
+            &__body {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+        }
+        &__about {
+            & ul {
+                font-weight: 300;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                & li {
+                    padding-bottom: 3vh;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .about__dash {
+        &:before {
+            position: relative;
+            content: '\2014';
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(min-width: 1021px) {
+    .card_course {
+        &__border {
+            border-bottom: 1px solid #DCDCDC;
+        }
+        &__wrapper {
+            background: #ffffff;
+            margin-top: 5vh;
+            padding: 5vh 3vw 0 3vw;
+            box-shadow: 0px 10px 30px rgba(166, 21, 252, 0.25);
+        }
+        &__title {
+            font-size: $h1;
+            color: $black-color;
+        }
+        &__subtitle {
+            font-size: $h4;
+            color: $black-color;
+            font-weight: 600;
+            padding-bottom: 2vh;
+        }
+        &__text {
+            font-size: $h6;
+            color: $black-color;
+            font-weight: 400;
+        }
+        &__column {
+            display: flex;
+            flex-direction: column;
+        }
+        &__row {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__header {
+            margin-bottom: 5vh;
+        }
+        &__price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            border-bottom: 1px solid #DCDCDC;
+        }
+        &__program {
+            &__header {
+                font-size: $h4;
+                padding-bottom: 3vh;
+            }
+            &__body {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                & li {
+                    position: relative;
+                    padding-top: 2vh;
+                    font-weight: 400;
+                    font-size: $h6;
+                    color: $black-color;
+                    padding-bottom: 2vh;
+                    // &:first-child {
+                    //     &:before {
+                    //         content: '';
+                    //         height: 1px;
+                    //         width: 1;
+                    //         position: absolute;
+                    //         top: 0;
+                    //         right: -3vw;
+                    //         left: -3vw;
+                    //         background-color: #dcdcdc;
+                    //     }
+                    // }
+                    // &:last-child {
+                    //     &:after {
+                    //         content: '';
+                    //         height: 0px;
+                    //     }
+                    // }
+                    &:after {
+                        content: '';
+                        height: 1px;
+                        width: 1;
+                        position: absolute;
+                        top: 0;
+                        right: -3vw;
+                        left: -3vw;
+                        background-color: #dcdcdc;
+                    }
+                }
+            }
+        }
+        &__about {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            & ul {
+                font-weight: 300;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                & li {
+                    padding-bottom: 1vh;
+                    text-align: justify;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .about__dash {
+        &:before {
+            position: relative;
+            content: '\2014';
+            margin-right: 10px;
+        }
+    }
+}

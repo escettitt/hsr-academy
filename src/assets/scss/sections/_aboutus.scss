@@ -1,0 +1,160 @@
+@media(max-width: 1020px) {
+    .about-us {
+        padding-top: 5vh;
+        background: linear-gradient(153.42deg, #A615FC 12.15%, #51098A 56.93%);
+        color: $white-color;
+        &__wrapper {
+            position: relative;
+            height: fit-content;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            padding-bottom: 10vh;
+            padding-top: 10vh;
+        }
+        &__body {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        &__order-1 {
+            order: 1;
+        }
+        &__order-2 {
+            order: 2;
+        }
+        &__element {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__body {
+                width: 100%;
+            }
+            &_pic {
+                width: 100%;
+                & img {
+                    width: 100%;
+                }
+            }
+            &_text-name {
+                font-size: 5vw;
+                text-align: center;
+                font-weight: 700;
+            }
+            &_text-subname {
+                font-size: 3.5vw;
+                text-align: center;
+                font-weight: 400;
+                padding-bottom: 3vh;
+            }
+            &_sign {}
+            &_text {
+                font-size: 3.3vw;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+        &__circle {
+            &-title {
+                font-size: 6vw;
+                font-weight: 900;
+                padding-bottom: 5vh;
+            }
+            &-description {
+                width: 100%;
+                font-size: 3.5vw;
+                line-height: 5vw;
+                font-weight: 400;
+                margin-bottom: 3vh;
+            }
+            &_text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+    .element_text__left {
+        text-align: left;
+    }
+}
+
+@media(min-width: 1021px) {
+    .about-us {
+        padding-top: 5vh;
+        background: linear-gradient(153.42deg, #A615FC 12.15%, #51098A 56.93%);
+        color: $white-color;
+        &__wrapper {
+            position: relative;
+            height: fit-content;
+            margin-right: $margin-container;
+            margin-left: $margin-container;
+        }
+        &__body {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        &__element {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            &__body {
+                width: 45%;
+            }
+            &_pic {
+                width: 50%;
+                & img {
+                    width: 100%;
+                }
+            }
+            &_text-name {
+                font-size: $h1;
+                font-weight: 700;
+            }
+            &_text-subname {
+                font-size: $h3;
+                font-weight: 400;
+            }
+            &_sign {}
+            &_text {
+                text-align: justify;
+                font-weight: 400;
+            }
+        }
+        &__circle {
+            position: relative;
+            width: 50vw;
+            height: 50vw;
+            border-radius: 50%;
+            background: linear-gradient(153.42deg, #A615FC 12.15%, #51098A 56.93%);
+            &-title {
+                font-size: $title;
+                font-weight: 900;
+                padding-bottom: 3vh;
+            }
+            &-description {
+                width: 70%;
+                font-size: $h6;
+                font-weight: 400;
+                padding-bottom: 5vh;
+            }
+            &_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
+    }
+    .element_text__left {
+        text-align: left;
+    }
+}

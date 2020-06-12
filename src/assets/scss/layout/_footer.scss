@@ -1,0 +1,188 @@
+@media(max-width:1020px) {
+    .or-1 {
+        order: 1;
+    }
+    .or-2 {
+        order: 2;
+    }
+    .footer {
+        position: relative;
+        background: linear-gradient(111.85deg, #1D0553 1.09%, #3C065E 50.97%, #430D7D 90%);
+        height: fit-content;
+        //layout
+        &__center {
+            justify-content: center;
+        }
+        &__container {
+            padding-top: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $white-color;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            z-index: 1000;
+        }
+        &__column {
+            display: flex;
+            flex-direction: column;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+        }
+        //text
+        &__title {
+            font-size: 5.5vw;
+            font-weight: bold;
+        }
+        &__subtitle {
+            font-size: 5vw;
+            font-weight: 700;
+        }
+        &__text {
+            font-size: 3.3vw;
+            line-height: 5vw;
+            font-weight: 400;
+            &__big {
+                font-size: 4.5vw;
+                font-weight: 600;
+                padding-top: 2vh;
+            }
+        }
+        &__copyright {
+            padding-top: 5vh;
+            padding-bottom: 1vh;
+            font-size: 3.5vw;
+            text-align: center;
+            font-weight: 300;
+            color: #ffffff;
+            opacity: 0.4;
+        }
+        &__nav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            & li {
+                padding-top: 3vh;
+                & a {
+                    font-size: 3.5vw;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1021px) {
+    .footer {
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        //layout
+        &__wrapper {
+            position: relative;
+            margin-left: -15vw;
+            z-index: 1;
+            height: 100vh;
+            width: 130vw;
+            border-top-left-radius: 100% 45%;
+            border-top-right-radius: 100% 45%;
+            background: linear-gradient(111.85deg, #1D0553 1.09%, #3C065E 50.97%, #430D7D 90%);
+        }
+        &__container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $white-color;
+            margin-right: $margin-container;
+            margin-left: $margin-container;
+            top: 15vh;
+            z-index: 1000;
+        }
+        &__row {
+            display: flex;
+            &:last-child {
+                margin-top: 5vh;
+            }
+        }
+        &__column {
+            display: flex;
+            flex-direction: column;
+            &:nth-child(1) {
+                width: 31%;
+                padding-right: 4vw;
+            }
+            &:nth-child(2) {
+                flex-basis: content;
+                width: 45%;
+                padding-left: 4vw;
+            }
+        }
+        //text
+        &__title {
+            font-size: $h2;
+            font-weight: bold;
+        }
+        &__subtitle {
+            font-size: $h4;
+            font-weight: 700;
+        }
+        &__text {
+            font-size: $h7;
+            font-weight: 400;
+        }
+        &__copyright {
+            position: absolute;
+            font-size: $h7;
+            font-weight: 300;
+            z-index: 1000;
+            bottom: 3vh;
+            left: $margin-container;
+            color: #ffffff;
+            opacity: 0.4;
+        }
+        //border
+        &__border_right {
+            position: relative;
+            &:after {
+                content: '';
+                height: 4vw;
+                width: 2px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-color: #ffffff;
+                opacity: 0.2;
+            }
+        }
+        &__nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            & li {
+                padding-top: 1vh;
+                & a {
+                    font-size: $h7;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: inherit;
+                }
+                &:nth-child(even) {
+                    width: 40%;
+                    float: right;
+                }
+                &:nth-child(odd) {
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+    }
+}

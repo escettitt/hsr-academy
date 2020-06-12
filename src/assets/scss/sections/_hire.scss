@@ -1,0 +1,248 @@
+@media(max-width: 1020px) {
+    .hire {
+        background: #FFFFFF;
+        &__wrapper {
+            height: fit-content;
+            position: relative;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            color: $white-color;
+            padding-bottom: 10vh;
+        }
+        &__title {
+            text-align: center;
+            color: $black-color;
+            padding-top: 10vh;
+            padding-bottom: 5vh;
+        }
+        &_gradient {
+            padding-top: 5vh;
+            margin-left: -5vw;
+            margin-right: -5vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            padding-bottom: 5vh;
+            background: linear-gradient(153.42deg, #A615FC 12.15%, #51098A 56.93%);
+        }
+        &__stages {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_circle {
+                margin-right: auto;
+                position: relative;
+                margin-bottom: 4vh;
+                height: 30vw;
+                width: 30vw;
+                border-radius: 50%;
+                background: radial-gradient(74.23% 74.23% at 79.28% 14.84%, #FFFFFF 3.68%, #EDEDED 58.33%, #C4C4C4 85.42%, #C2C2C2 100%);
+                box-shadow: -20px 30px 40px rgba(0, 0, 0, 0.1), inset -4px -10px 30px rgba(0, 0, 0, 0.2);
+                & img {
+                    position: absolute;
+                    height: 50%;
+                    width: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            &_element {
+                width: 60%;
+                margin-left: 2vw;
+                text-align: left;
+                &:nth-child(2n) {
+                    margin-left: auto;
+                    margin-right: 2vw;
+                    text-align: right;
+                    width: 60%;
+                    & .hire__stages_circle {
+                        margin-right: 0;
+                        margin-left: auto;
+                    }
+                }
+            }
+            &__body {
+                &_header {
+                    font-size: 3.5vw;
+                    padding-bottom: 2vh;
+                }
+                &_text {
+                    font-size: 3.5vw;
+                    font-weight: 300;
+                }
+            }
+        }
+        &__notebook {
+            margin: 0 -5vw;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            position: relative;
+            background: #FAFAFA;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+            background-size: contain;
+            &__body {
+                padding-right: 5vw;
+                padding-left: 5vw;
+                color: $black-color;
+                font-size: 3.3vw;
+            }
+            &__text {
+                margin-bottom: 5vh;
+                line-height: 3vh;
+                text-align: justify;
+            }
+            &__list {
+                padding: 0;
+                justify-content: justify;
+                list-style: none;
+                & li {
+                    position: relative;
+                    padding-left: 7vw;
+                    margin-bottom: 2vh;
+                    /* space to preserve indentation on wrap */
+                    &:before {
+                        content: '';
+                        /* placeholder for the SVG */
+                        position: absolute;
+                        margin-left: -7vw;
+                        width: 7vw;
+                        height: 4vw;
+                        background-size: contain;
+                        background: url('./assets/img/check.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1021px) {
+    .hire {
+        background: linear-gradient(153.42deg, #A615FC 12.15%, #51098A 56.93%);
+        &__wrapper {
+            height: fit-content;
+            position: relative;
+            margin-right: $margin-container;
+            margin-left: $margin-container;
+            color: $white-color;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__partners_circle {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            height: 5vw;
+            width: 5vw;
+            border-radius: 50%;
+            background: linear-gradient(153.42deg, #A615FC 12.15%, #51098A 56.93%);
+            &::after {
+                content: '';
+                background: url('./assets/img/arrow.svg') no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                background-size: contain;
+                height: 3vw;
+                width: 1vw;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &__stages {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: flex;
+            justify-content: space-between;
+            &_circle {
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                margin-bottom: 2vh;
+                height: 7vw;
+                width: 7vw;
+                border-radius: 50%;
+                background: radial-gradient(74.23% 74.23% at 79.28% 14.84%, #FFFFFF 3.68%, #EDEDED 58.33%, #C4C4C4 85.42%, #C2C2C2 100%);
+                box-shadow: -20px 30px 40px rgba(0, 0, 0, 0.1), inset -4px -10px 30px rgba(0, 0, 0, 0.2);
+                & img {
+                    position: absolute;
+                    height: 50%;
+                    width: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            &_element {
+                width: 21%;
+                &:nth-child(2n) {
+                    margin-top: 15vh;
+                }
+            }
+            &__body {
+                &_header {
+                    font-size: $h6;
+                    text-align: center;
+                    padding-bottom: 1vh;
+                }
+                &_text {
+                    font-size: $h7;
+                    font-weight: 300;
+                    text-align: center;
+                }
+            }
+        }
+        &__notebook {
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            position: relative;
+            background: url('./assets/img/notebook.svg') no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 72vh;
+            &__body {
+                position: absolute;
+                width: 70%;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $black-color;
+                font-size: $h5;
+            }
+            &__text {
+                margin-bottom: 5vh;
+                line-height: 3vh;
+                text-align: center;
+            }
+            &__list {
+                margin-right: 10%;
+                margin-left: 10%;
+                justify-content: center;
+                list-style: none;
+                & li {
+                    position: relative;
+                    padding-left: 1.5em;
+                    margin-bottom: 2vh;
+                    /* space to preserve indentation on wrap */
+                    &:before {
+                        content: '';
+                        /* placeholder for the SVG */
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        /* place the SVG at the start of the padding */
+                        width: 1em;
+                        height: 1em;
+                        background: url('./assets/img/check.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
